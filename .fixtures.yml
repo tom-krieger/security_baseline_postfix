@@ -1,0 +1,22 @@
+# This file can be used to install module dependencies for unit testing
+# See https://github.com/puppetlabs/puppetlabs_spec_helper#using-fixtures for details
+---
+fixtures:
+  symlinks:
+    security_baseline_postfix: "#{source_dir}"
+  forge_modules:
+    stdlib:
+      repo: "puppetlabs-stdlib"
+      ref: "6.0.0"
+    augeas:
+      repo: "camptocamp-augeas"
+      ref: "1.8.0"
+    ntp:
+      repo: "camptocamp-postfix"
+      ref: "1.8.0"
+    mailalias_ode:
+      repo: "puppetlabs-mailalias_core"
+      ref: "1.0.5"
+    alternatives:
+      repo: "puppet-alternatives"
+      ref: "3.0.0"
